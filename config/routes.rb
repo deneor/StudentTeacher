@@ -1,4 +1,8 @@
 StudentTeacher::Application.routes.draw do
+  resources :groups
+
+  resources :roles
+
   devise_for :users
   resources :users
   root :to => 'users#index'

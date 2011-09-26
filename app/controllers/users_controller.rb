@@ -6,5 +6,10 @@ class UsersController < ApplicationController
   def show
       @users = User.all
   end
+  
+  def group_change
+      @user=Users.find(params[:id])
+      @group=Group.find(user.group_id)
+  end
 
 end

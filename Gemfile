@@ -6,6 +6,7 @@ gem 'rails', '3.1.0'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'cancan'
 gem 'devise', :git => 'git://github.com/plataformatec/devise.git'
 gem 'jquery-rails'
 gem 'paperclip'

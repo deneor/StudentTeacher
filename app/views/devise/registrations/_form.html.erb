@@ -16,19 +16,19 @@
   </div>
   <div class="field">
     <%= f.label :name %><br />
-    <%= f.text_field :
-      name %>
+    <%= f.text_field :name %>
   </div>
-  <% if @current_method == "new" %>
     <div class="field">
-      <%= f.label :password %><br />
-      <%= f.password_field :password %>
+  <%= f.label :password %> <br />
+  <%= f.password_field :password %>
     </div>
-    <div class="field">
-      <%= f.label :password_confirmation %><br />
-      <%= f.password_field :password_confirmation %>
+
+  <div class="field">
+  <%= f.label :password_confirmation %><br />
+  <%= f.password_field :password_confirmation %>
     </div>
-  <% end %>
+    
+   
   <% for role in Role.find(:all) %>
     <div>
       <%= check_box_tag "user[role_ids][]", role.id, @user.roles.include?(role) %>
